@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      number1 = parseInt(prompt("Indica un número."));
+      number2 = parseInt(prompt("Indica otro número."));
+
+      division(number1, number2);
+
+      function division(num1, num2) {
+        do {
+          let result = num1 / num2;
+          window.alert(
+            "El resultado de dividir ambos números es de " + result + "."
+          );
+          num1 = parseInt(prompt("Indica un número."));
+          num2 = parseInt(prompt("Indica otro número."));
+        } while (num1 !== 0 || num2 !== 0);
+      }
+    </script>
+  </body>
+</html>
